@@ -1,30 +1,94 @@
 import Image from 'next/image'
+import Projects from './projects'
+import Publications from './publications'
+import Patents from './patents'
+
 
 export default function Home() {
   return (
     <div>
       <Landing />
       <Experiences />
+      <Education />
+      <Projects />
+      <Awards />
+      <Patents />
+      <Publications />
     </div>
   )
 }
 
-
 export function Landing() {
   return (
-    <div className="hero min-h-screen bg-base-200">
-      <div className="hero-content text-center">
-        <div className="max-w-xl">
 
-          <h2 className="text-3xl font-bold">ARTIFICIAL</h2>
-          <h2 className="text-3xl font-bold">INTELLIGENCE</h2>
-          <h2 className="text-3xl font-bold">PROFESSIONAL</h2>
-          <h2 className="text-3xl font-bold">FOR SCIENCE & INDUSTRY</h2>
-          <h1 className="text-5xl font-bold">DONGYOUNG KIM, Ph.D.</h1>
-          <div>
-            <button className="btn btn-primary">이력서</button>
-            <button className="btn btn-primary">Curriculum Vitae</button>
-            <button className="btn btn-primary">Blog</button>
+    <div className="hero min-h-screen bg-dreamy-gradient" id="landing">
+      <div className="hero-content text-center">
+        <div className="avatar">
+          <div className="w-60 mask mask-hexagon">
+            <img src="/picture.png" />
+          </div>
+        </div>
+        <div className="max-w-xl text-left">
+
+          <h2 className="text-3xl ">ARTIFICIAL</h2>
+          <h2 className="text-3xl ">INTELLIGENCE</h2>
+          <h2 className="text-3xl ">PROFESSIONAL</h2>
+          <h2 className="text-3xl ">FOR SCIENCE & INDUSTRY</h2>
+          <h1 className="text-5xl font-bold pt-5">DONGYOUNG KIM, Ph.D.</h1>
+
+          <div className='flex gap-2 pt-5 object-left w-96'>
+            <div><a href='2023_cv_dongyoungkim.pdf'><button className="btn btn-primary">CV</button></a></div>
+            <div><a href='mailto:Dongyoung.kim@me.com'><button className="btn btn-neutral">e-mail</button></a></div>
+            <div><a href='https://velog.io/@dongyoungkim'><button className="btn btn-primary">Blog</button></a></div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  )
+}
+
+// function for education, with hero class contains a table of list of my education
+export function Education() {
+  return (
+    <div className="hero min-h-screen bg-dreamy-gradient" id="education">
+      <div className="hero-content text-center">
+        <div className="max-w-2xl">
+          <h1 className="text-3xl font-bold py-10">EDUCATION</h1>
+
+          <div className="overflow-x-auto">
+            <table className="table  text-md ">
+              {/* head */}
+              <thead>
+                <tr>
+                  <th>YEARS</th>
+                  <th>TITLE</th>
+                </tr>
+              </thead>
+              <tbody>
+
+                <tr>
+                  <td>2012 - 2016</td>
+
+                  <td>
+                    <div className="font-bold text-gray-800">Doctor of Philosophy in Biomedical Engineering</div>
+                    <div>Texas A&M University Texas, U.S.A. </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>2010 - 2012</td>
+
+                  <td>
+                    <div className="font-bold text-gray-800">Bachelor's degree in Electrical Engineering and Computer Science</div>
+                    <div>The University of Texas at Dallas Texas, U.S.A. </div>
+                  </td>
+                </tr>
+
+
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
@@ -36,7 +100,7 @@ export function Landing() {
 export function Experiences() {
 
   return (
-    <div className="hero min-h-screen bg-base-100">
+    <div className="hero min-h-screen bg-base-100" id="experience">
       <div className="hero-content text-center">
         <div className="max-w-2xl">
           <h1 className="text-3xl font-bold py-10">EXPERIENCES</h1>
@@ -124,3 +188,104 @@ export function Experiences() {
     </div>
   )
 }
+
+export function Awards() {
+  return (
+    <div className="hero min-h-screen bg-base-100" id="award">
+      <div className="hero-content text-center">
+        <div className="max-w-2xl">
+          <h1 className="text-3xl font-bold py-10">AWARDS</h1>
+
+          <div className="overflow-x-auto">
+            <table className="table  text-md ">
+              {/* head */}
+              <thead>
+                <tr>
+                  <th>YEARS</th>
+                  <th>TITLE</th>
+                </tr>
+              </thead>
+              <tbody>
+
+                <tr>
+                  <td>2022</td>
+                  <td>
+                    <div className="font-bold text-gray-800">한국지능정보시스템학회 추계 학술대회 우수논문상</div>
+                    <div>Deep Learning OCR based document processing platform and its application in financial domain.</div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>2020</td>
+                  <td>
+                    <div className="font-bold text-gray-800">IEEE ICDAR SROIE text localization task 2020 1 위</div>
+                    <div>https://rrc.cvc.uab.es/?ch=13&com=evaluation&task=1</div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>2020</td>
+                  <td>
+                    <div className="font-bold text-gray-800">IEEE ICDAR SROIE text recognition task 2020 1 위</div>
+                    <div>https://rrc.cvc.uab.es/?ch=13&com=evaluation&task=2</div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>2018</td>
+                  <td>
+                    <div className="font-bold text-gray-800">Shark Tank Competition 1 위</div>
+                    <div>The 22nd International Conference On Miniaturized Systems For Chemistry And Life Sciences, Taiwan</div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>2016</td>
+                  <td>
+                    <div className="font-bold text-gray-800">3D single molecule localization microscopy 부문 1 위</div>
+                    <div>SMLMS Challenge (EPFL), Swissland</div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>2014 - 2016	</td>
+                  <td>
+                    <div className="font-bold text-gray-800">Texas A&M University 연구 장학금 </div>
+                    <div>Texas A&M University, Texas, U.S.A.</div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>2011 - 2014	</td>
+                  <td>
+                    <div className="font-bold text-gray-800">The University of Texas at Dallas 연구 장학금</div>
+                    <div>The University of Texas at Dallas, Texas, U.S.A.</div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>2011</td>
+                  <td>
+                    <div className="font-bold text-gray-800">Senior Design Project 2 위</div>
+                    <div>The University of Texas at Dallas, Texas, U.S.A.</div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>2010 - 2012</td>
+                  <td>
+                    <div className="font-bold text-gray-800">The University of Texas at Dallas 학사 장학금</div>
+                    <div>The University of Texas at Dallas, Texas, U.S.A.</div>
+                  </td>
+                </tr>
+
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+

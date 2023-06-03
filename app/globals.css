@@ -19,3 +19,12 @@
 body {
   color: rgb(var(--foreground-rgb));
 }
+
+.bg-dreamy-gradient {
+  background: linear-gradient(135deg, #d4e1ff 0%, #ffdaec 100%);
+}
+
+html {
+  --scroll-behavior: smooth !important;
+  scroll-behavior: smooth !important;
+}
