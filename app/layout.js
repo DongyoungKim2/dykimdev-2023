@@ -11,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
+      <head>
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-PDLHHVCPF5"></script>
         <script
           id="google-analytics"
@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
           `,
           }}
         />
-      </Head>
+      </head>
       <body className={inter.className}>
         <Navbar />
         <div className='z-20	'>
