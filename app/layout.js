@@ -3,10 +3,8 @@ import { Inter } from 'next/font/google'
 import Link from 'next/link'
 const inter = Inter({ subsets: ['latin'] })
 import Script from 'next/script';
-const GA_Measurement_ID = process.env.NEXT_PUBLIC_MEASUREMENT_ID;
-import Head from 'next/head';
 import Navbar from './navbar';
-
+import GoogleAnalytics from './googleanalytics';
 
 export const metadata = {
   title: 'Dongyoung Kim, Ph.D.',
@@ -16,24 +14,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
-        <script
-          async
-          src={`https://www.googletagmanager.com/gtag/js?id=G-PDLHHVCPF5`}
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-PDLHHVCPF5', {
-            page_path: window.location.pathname,
-          });
-        `,
-          }}
-        />
-      </Head>
+
+      <GoogleAnalytics />
+
       <body className={inter.className}>
         <Navbar />
         <div className='z-20	'>
