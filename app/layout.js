@@ -2,6 +2,11 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import Link from 'next/link'
 const inter = Inter({ subsets: ['latin'] })
+import Script from 'next/script';
+const GA_Measurement_ID = process.env.NEXT_PUBLIC_MEASUREMENT_ID;
+import Head from 'next/head';
+import Navbar from './navbar';
+
 
 export const metadata = {
   title: 'Dongyoung Kim, Ph.D.',
@@ -11,23 +16,24 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PDLHHVCPF5"></script>
+      <Head>
         <script
-          id="google-analytics"
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=G-PDLHHVCPF5`}
+        />
+        <script
           dangerouslySetInnerHTML={{
             __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-PDLHHVCPF5', {
-              page_path: window.location.pathname,
-            });
-          `,
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-PDLHHVCPF5', {
+            page_path: window.location.pathname,
+          });
+        `,
           }}
         />
-      </head>
+      </Head>
       <body className={inter.className}>
         <Navbar />
         <div className='z-20	'>
@@ -35,33 +41,10 @@ export default function RootLayout({ children }) {
         </div>
         <Footer />
       </body>
-
     </html>
   )
 }
 
-
-// navbar function
-export function Navbar() {
-  return (
-    <div className="navbar bg-opacity-80 z-50 bg-neutral text-neutral-content fixed top-0 left-0 w-full ">
-      <div className="flex-1">
-        <a className="btn btn-ghost normal-case text-xl">DONGYOUNG KIM, Ph.D.</a>
-      </div>
-      <div className="flex-none">
-        <ul className="menu menu-horizontal px-1">
-          <li><Link href="#landing" >Home</Link></li>
-          <li><Link href="#experience">Experience</Link></li>
-          <li><Link href="#education">Education</Link></li>
-          <li><Link href="#project">Project</Link></li>
-          <li><Link href="#award">Award</Link></li>
-          <li><Link href="#patent">Patent</Link></li>
-          <li><Link href="#publication">Publication</Link></li>
-        </ul>
-      </div>
-    </div>
-  )
-}
 
 export function Footer() {
   return (

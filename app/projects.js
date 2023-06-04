@@ -1,5 +1,25 @@
 'use client'
 import Image from 'next/image';
+import { isMobile } from 'is-mobile';
+import { useEffect, useState } from 'react';
+
+var circleSize = "w-36 rounded-full ring ring-primary  ring-offset-base-100 ring-offset-2"
+
+export function CircleSize() {
+
+    const [isUserOnMobile, setIsUserOnMobile] = useState(false);
+
+    useEffect(() => {
+        setIsUserOnMobile(isMobile());
+    }, []);
+
+    if (isUserOnMobile) {
+        return "w-16 rounded-full ring ring-primary  ring-offset-base-100 ring-offset-2"
+    } else {
+        return "w-36 rounded-full ring ring-primary  ring-offset-base-100 ring-offset-2"
+    }
+}
+
 
 
 // function for projects, with hero class contains a table of list of my projects
@@ -36,10 +56,11 @@ export default async function Projects() {
     )
 }
 export function Gpt() {
+    const circleSize = CircleSize();
     return (
         <div className="tooltip tooltip-bottom" data-tip="GPT (Generative Pretrained Transformer) Platform )roject">
             <div className="avatar" onClick={() => window.gpt.showModal()}>
-                <div className="w-36 rounded-full ring ring-primary  ring-offset-base-100 ring-offset-2">
+                <div className={circleSize}>
                     <img src="/projects/gpt.png" />
                 </div>
             </div>
@@ -67,10 +88,11 @@ export function Gpt() {
 }
 
 export function Lvlm() {
+    const circleSize = CircleSize();
     return (
         <div className="tooltip tooltip-bottom" data-tip="Large Vision-Language Model (LVLM) Training Project">
             <div className="avatar" onClick={() => window.lvlm.showModal()}>
-                <div className="w-36 rounded-full ring ring-primary  ring-offset-base-100 ring-offset-2">
+                <div className={circleSize}>
                     <img src="/projects/lvlm.png" />
                 </div>
             </div>
@@ -99,10 +121,11 @@ export function Lvlm() {
 }
 
 export function Kbaiocr() {
+    const circleSize = CircleSize();
     return (
         <div className="tooltip tooltip-bottom" data-tip="KB AI-OCR 공통플랫폼 구축 프로젝트">
             <div className="avatar" onClick={() => window.kbaiocr.showModal()}>
-                <div className="w-36 rounded-full ring ring-primary  ring-offset-base-100 ring-offset-2">
+                <div className={circleSize}>
                     <img src="/projects/ocr.png" />
                 </div>
             </div>
@@ -149,10 +172,11 @@ export function Kbaiocr() {
 
 
 export function KBAIOCRModel() {
+    const circleSize = CircleSize();
     return (
         <div className="tooltip tooltip-bottom" data-tip="KB AI-OCR 모델 개발 프로젝트">
             <div className="avatar" onClick={() => window.kbaiocrmodel.showModal()}>
-                <div className="w-36 rounded-full ring ring-primary  ring-offset-base-100 ring-offset-2">
+                <div className={circleSize}>
                     <img src="/projects/ocr_model.png" />
                 </div>
             </div>
@@ -189,16 +213,17 @@ export function KBAIOCRModel() {
                     <button>close</button>
                 </form>
             </dialog>
-            <div className="font-bold py-2">KBAIOCRModel (2021 - 2022)</div>
+            <div className="font-bold py-2">OCR Model (2021 - 2022)</div>
         </div>
     )
 }
 
 export function DataLake() {
+    const circleSize = CircleSize();
     return (
         <div className="tooltip tooltip-bottom" data-tip="셔클 서비스 DataLake 구축 프로젝트">
             <div className="avatar" onClick={() => window.datalake.showModal()}>
-                <div className="w-36 rounded-full ring ring-primary  ring-offset-base-100 ring-offset-2">
+                <div className={circleSize}>
                     <img src="/projects/datalake.png" />
                 </div>
             </div>
@@ -227,10 +252,11 @@ export function DataLake() {
 
 
 export function SLIOCR() {
+    const circleSize = CircleSize();
     return (
         <div className="tooltip tooltip-bottom" data-tip="SLI-OCR 모델 개발 프로젝트">
             <div className="avatar" onClick={() => window.sliocr.showModal()}>
-                <div className="w-36 rounded-full ring ring-primary  ring-offset-base-100 ring-offset-2">
+                <div className={circleSize}>
                     <img src="/projects/sliocr.png" />
                 </div>
             </div>
@@ -278,10 +304,11 @@ export function SLIOCR() {
 }
 
 export function GraphDB() {
+    const circleSize = CircleSize();
     return (
         <div className="tooltip tooltip-bottom" data-tip="금융 지식 그래프 / 기계 독해 검색 엔진 개발">
             <div className="avatar" onClick={() => window.graphdb.showModal()}>
-                <div className="w-36 rounded-full ring ring-primary  ring-offset-base-100 ring-offset-2">
+                <div className={circleSize}>
                     <img src="/projects/OIG.jpeg" />
                 </div>
             </div>
@@ -309,10 +336,11 @@ export function GraphDB() {
 
 
 export function AIM() {
+    const circleSize = CircleSize();
     return (
         <div className="tooltip tooltip-bottom" data-tip="인공지능현미경 (AI-powered transmitted light microscopy for functional analysis of live cells)">
             <div className="avatar" onClick={() => window.aim.showModal()}>
-                <div className="w-36 rounded-full ring ring-primary  ring-offset-base-100 ring-offset-2">
+                <div className={circleSize}>
                     <img src="/projects/aim.png" />
                 </div>
             </div>
@@ -346,10 +374,11 @@ export function AIM() {
 }
 
 export function Hist() {
+    const circleSize = CircleSize();
     return (
         <div className="tooltip tooltip-bottom" data-tip="인공지능 조직학 이미지 촬영 기술 (In-silico histology staining on NIR LED array-based quantitative phase imaging)">
             <div className="avatar" onClick={() => window.hist.showModal()}>
-                <div className="w-36 rounded-full ring ring-primary  ring-offset-base-100 ring-offset-2">
+                <div className={circleSize}>
                     <img src="/projects/hist.png" />
                 </div>
             </div>
@@ -376,10 +405,11 @@ export function Hist() {
 }
 
 export function AITomography() {
+    const circleSize = CircleSize();
     return (
         <div className="tooltip tooltip-bottom" data-tip="인공지능 초고속 3차원 단층촬영 기법 (AI assisted rapid tomography imaging modality)">
             <div className="avatar" onClick={() => window.aitomography.showModal()}>
-                <div className="w-36 rounded-full ring ring-primary  ring-offset-base-100 ring-offset-2">
+                <div className={circleSize}>
                     <img src="/projects/aitomography.png" />
                 </div>
             </div>
@@ -403,10 +433,11 @@ export function AITomography() {
     )
 }
 export function Spinner() {
+    const circleSize = CircleSize();
     return (
         <div className="tooltip tooltip-bottom" data-tip="A FIDGET SPINNER FOR THE POINT-OF-CARE DIAGNOSIS OF URINARY TRACT INFECTION">
             <div className="avatar" onClick={() => window.spinner.showModal()}>
-                <div className="w-36 rounded-full ring ring-primary  ring-offset-base-100 ring-offset-2">
+                <div className={circleSize}>
                     <img src="/projects/spinner.png" />
                 </div>
             </div>
@@ -449,10 +480,11 @@ export function Spinner() {
 }
 
 export function Evident() {
+    const circleSize = CircleSize();
     return (
         <div className="tooltip tooltip-bottom" data-tip="EV-IDENT: IDENTIFYING TUMOR-SPECIFIC EXTRACELLULAR VESICLES BY SIZE FRACTIONATION AND SINGLE-VESICLE ANALYSIS">
             <div className="avatar" onClick={() => window.evident.showModal()}>
-                <div className="w-36 rounded-full ring ring-primary  ring-offset-base-100 ring-offset-2">
+                <div className={circleSize}>
                     <img src="/projects/evident.png" />
                 </div>
             </div>
@@ -484,10 +516,11 @@ export function Evident() {
     )
 }
 export function SR() {
+    const circleSize = CircleSize();
     return (
         <div className="tooltip tooltip-bottom" data-tip="THREE-DIMENSIONAL SINGLE-MOLECULE LOCALIZATION SUPER-RESOLUTION MICROSCOPY">
             <div className="avatar" onClick={() => window.sr.showModal()}>
-                <div className="w-36 rounded-full ring ring-primary  ring-offset-base-100 ring-offset-2">
+                <div className={circleSize}>
                     <img src="/projects/sr.png" />
                 </div>
             </div>
@@ -527,10 +560,11 @@ export function SR() {
 }
 
 export function RMUM() {
+    const circleSize = CircleSize();
     return (
         <div className="tooltip tooltip-bottom" data-tip="REMOTE FOCUSING MULTIFOCAL PLANE MICROSCOPY FOR THE IMAGING OF 3D SINGLE MOLECULE DYNAMICS WITH CELLULAR CONTEXT">
             <div className="avatar" onClick={() => window.rmum.showModal()}>
-                <div className="w-36 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                <div className={circleSize}>
                     <img src="/projects/rmum.png" />
                 </div>
             </div>
@@ -573,10 +607,11 @@ export function RMUM() {
 }
 
 export function HER23() {
+    const circleSize = CircleSize();
     return (
         <div className="tooltip tooltip-bottom" data-tip="HER2/HER3 SIGNALING OVERCOMES HEREGULIN-INDUCED RESISTANCE TO PI3K INHIBITION IN PROSTATE CANCER">
             <div className="avatar" onClick={() => window.her23.showModal()}>
-                <div className="w-36 rounded-full ring ring-primary  ring-offset-base-100 ring-offset-2">
+                <div className={circleSize}>
                     <img src="/projects/her23.png" />
                 </div>
             </div>
@@ -608,10 +643,11 @@ export function HER23() {
     )
 }
 export function HER2() {
+    const circleSize = CircleSize();
     return (
         <div className="tooltip tooltip-bottom" data-tip="THE LEVEL OF HER2 EXPRESSION IS A PREDICTOR OF ANTIBODY-HER2 TRAFFICKING BEHAVIOR IN CANCER CELLS">
             <div className="avatar" onClick={() => window.her2.showModal()}>
-                <div className="w-36 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                <div className={circleSize}>
                     <img src="/projects/her2.png" />
                 </div>
             </div>
