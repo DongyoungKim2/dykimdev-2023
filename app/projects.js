@@ -14,7 +14,7 @@ export function CircleSize() {
   }, []);
 
   if (isUserOnMobile) {
-    return "w-16 rounded-full ring ring-primary  ring-offset-base-100 ring-offset-2";
+    return "w-8 rounded-full ring ring-primary  ring-offset-base-100 ring-offset-2";
   } else {
     return "w-36 rounded-full ring ring-primary  ring-offset-base-100 ring-offset-2";
   }
