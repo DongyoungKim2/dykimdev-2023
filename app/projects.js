@@ -59,7 +59,7 @@ export function Gpt() {
     >
       <div className="avatar" onClick={() => window.gpt.showModal()}>
         <div className={circleSize}>
-          <img src="/projects/gpt.png" />
+          <img src="/projects/gpt_tn.png" />
         </div>
       </div>
       <dialog id="gpt" className="modal">
@@ -74,7 +74,7 @@ export function Gpt() {
             GPT Platform Project
           </h1>
           <Image
-            src="/projects/gpt.png"
+            src="/projects/gpt_rz.png"
             alt="Image"
             width="0"
             height="0"
@@ -114,7 +114,7 @@ export function Lvlm() {
     >
       <div className="avatar" onClick={() => window.lvlm.showModal()}>
         <div className={circleSize}>
-          <img src="/projects/lvlm.png" />
+          <img src="/projects/lvlm_tn.png" />
         </div>
       </div>
       <dialog id="lvlm" className="modal">
@@ -129,7 +129,7 @@ export function Lvlm() {
             Large Vision-Language Model (LVLM) Training Project
           </h1>
           <Image
-            src="/projects/lvlm.png"
+            src="/projects/lvlm_rz.png"
             alt="Image"
             width="0"
             height="0"
@@ -178,7 +178,7 @@ export function Kbaiocr() {
     >
       <div className="avatar" onClick={() => window.kbaiocr.showModal()}>
         <div className={circleSize}>
-          <img src="/projects/ocr.png" />
+          <img src="/projects/ocr_tn.png" />
         </div>
       </div>
       <dialog id="kbaiocr" className="modal">
@@ -193,7 +193,7 @@ export function Kbaiocr() {
             KB AI-OCR 공통플랫폼 구축 프로젝트
           </h1>
           <Image
-            src="/projects/ocr.png"
+            src="/projects/ocr_rz.png"
             alt="KB AI-OCR 공통 플랫폼 Hybrid GPU Cluster 및 MLOps 시스템 구성도"
             width="0"
             height="0"
@@ -302,7 +302,7 @@ export function KBAIOCRModel() {
     >
       <div className="avatar" onClick={() => window.kbaiocrmodel.showModal()}>
         <div className={circleSize}>
-          <img src="/projects/ocr_model.png" />
+          <img src="/projects/ocr_model_tn.png" />
         </div>
       </div>
       <dialog id="kbaiocrmodel" className="modal">
@@ -317,7 +317,7 @@ export function KBAIOCRModel() {
             KB AI-OCR 모델 개발 프로젝트
           </h1>
           <Image
-            src="/projects/ocr_model.png"
+            src="/projects/ocr_model_rz.png"
             alt="Image"
             width="0"
             height="0"
@@ -403,7 +403,7 @@ export function DataLake() {
     >
       <div className="avatar" onClick={() => window.datalake.showModal()}>
         <div className={circleSize}>
-          <img src="/projects/datalake.png" />
+          <img src="/projects/datalake_tn.png" />
         </div>
       </div>
       <dialog id="datalake" className="modal">
@@ -418,7 +418,7 @@ export function DataLake() {
             셔클 서비스 DataLake 구축 프로젝트
           </h1>
           <Image
-            src="/projects/datalake.png"
+            src="/projects/datalake_rz.png"
             alt="Image"
             width="0"
             height="0"
@@ -472,7 +472,7 @@ export function SLIOCR() {
     >
       <div className="avatar" onClick={() => window.sliocr.showModal()}>
         <div className={circleSize}>
-          <img src="/projects/sliocr.png" />
+          <img src="/projects/sliocr_tn.png" />
         </div>
       </div>
       <dialog id="sliocr" className="modal">
@@ -487,7 +487,7 @@ export function SLIOCR() {
             SLI-OCR 모델 개발 프로젝트
           </h1>
           <Image
-            src="/projects/sliocr.png"
+            src="/projects/sliocr_rz.png"
             alt="Image"
             width="0"
             height="0"
@@ -532,7 +532,7 @@ export function SLIOCR() {
           </div>
           <div className="py-4">
             <Image
-              src="/projects/sliocr2.png"
+              src="/projects/sliocr2_rz.png"
               alt="Image"
               width="0"
               height="0"
@@ -595,7 +595,7 @@ export function GraphDB() {
     >
       <div className="avatar" onClick={() => window.graphdb.showModal()}>
         <div className={circleSize}>
-          <img src="/projects/OIG.jpeg" />
+          <img src="/projects/OIG_tn.png" />
         </div>
       </div>
       <dialog id="graphdb" className="modal">
@@ -645,7 +645,7 @@ export function AIM() {
     >
       <div className="avatar" onClick={() => window.aim.showModal()}>
         <div className={circleSize}>
-          <img src="/projects/aim.png" />
+          <img src="/projects/aim_tn.png" />
         </div>
       </div>
       <dialog id="aim" className="modal">
@@ -661,7 +661,7 @@ export function AIM() {
             functional analysis of live cells)
           </h1>
           <Image
-            src="/projects/aim.png"
+            src="/projects/aim_rz.png"
             alt="Image"
             width="0"
             height="0"
@@ -742,7 +742,7 @@ export function Hist() {
             인공지능 조직학 이미징 시스템 구조 및 동작 예시
           </h1>
           <Image
-            src="/projects/hist.png"
+            src="/projects/hist_rz.png"
             alt="Image"
             width="0"
             height="0"
@@ -793,7 +793,7 @@ export function AITomography() {
     >
       <div className="avatar" onClick={() => window.aitomography.showModal()}>
         <div className={circleSize}>
-          <img src="/projects/aitomography.png" />
+          <img src="/projects/aitomography_tn.png" />
         </div>
       </div>
       <dialog id="aitomography" className="modal">
@@ -802,7 +802,7 @@ export function AITomography() {
             인공지능 초고속 단층촬영
           </h1>
           <Image
-            src="/projects/aitomography.png"
+            src="/projects/aitomography_rz.png"
             alt="Image"
             width="0"
             height="0"
@@ -844,7 +844,7 @@ export function Spinner() {
     >
       <div className="avatar" onClick={() => window.spinner.showModal()}>
         <div className={circleSize}>
-          <img src="/projects/spinner.png" />
+          <img src="/projects/spinner_tn.png" />
         </div>
       </div>
       <dialog id="spinner" className="modal">
@@ -860,7 +860,7 @@ export function Spinner() {
             INFECTION
           </h1>
           <Image
-            src="/projects/spinner.png"
+            src="/projects/spinner_rz.png"
             alt="Image"
             width="0"
             height="0"
@@ -951,7 +951,7 @@ export function Evident() {
     >
       <div className="avatar" onClick={() => window.evident.showModal()}>
         <div className={circleSize}>
-          <img src="/projects/evident.png" />
+          <img src="/projects/evident_tn.png" />
         </div>
       </div>
       <dialog id="evident" className="modal">
@@ -967,7 +967,7 @@ export function Evident() {
             FRACTIONATION AND SINGLE-VESICLE ANALYSIS
           </h1>
           <Image
-            src="/projects/evident.png"
+            src="/projects/evident_rz.png"
             alt="Image"
             width="0"
             height="0"
@@ -1026,7 +1026,7 @@ export function SR() {
     >
       <div className="avatar" onClick={() => window.sr.showModal()}>
         <div className={circleSize}>
-          <img src="/projects/sr.png" />
+          <img src="/projects/sr_tn.png" />
         </div>
       </div>
       <dialog id="sr" className="modal">
@@ -1042,7 +1042,7 @@ export function SR() {
             MICROSCOPY
           </h1>
           <Image
-            src="/projects/sr.png"
+            src="/projects/sr_rz.png"
             alt="Image"
             width="0"
             height="0"
@@ -1119,7 +1119,7 @@ export function RMUM() {
     >
       <div className="avatar" onClick={() => window.rmum.showModal()}>
         <div className={circleSize}>
-          <img src="/projects/rmum.png" />
+          <img src="/projects/rmum_tn.png" />
         </div>
       </div>
       <dialog id="rmum" className="modal">
@@ -1135,7 +1135,7 @@ export function RMUM() {
             SINGLE MOLECULE DYNAMICS WITH CELLULAR CONTEXT
           </h1>
           <Image
-            src="/projects/rmum.png"
+            src="/projects/rmum_rz.png"
             alt="Image"
             width="0"
             height="0"
@@ -1224,7 +1224,7 @@ export function HER23() {
     >
       <div className="avatar" onClick={() => window.her23.showModal()}>
         <div className={circleSize}>
-          <img src="/projects/her23.png" />
+          <img src="/projects/her23_tn.png" />
         </div>
       </div>
       <dialog id="her23" className="modal">
@@ -1240,7 +1240,7 @@ export function HER23() {
             INHIBITION IN PROSTATE CANCER
           </h1>
           <Image
-            src="/projects/her23.png"
+            src="/projects/her23_rz.png"
             alt="Image"
             width="0"
             height="0"
@@ -1306,7 +1306,7 @@ export function HER2() {
     >
       <div className="avatar" onClick={() => window.her2.showModal()}>
         <div className={circleSize}>
-          <img src="/projects/her2.png" />
+          <img src="/projects/her2_tn.png" />
         </div>
       </div>
       <dialog id="her2" className="modal">
@@ -1322,7 +1322,7 @@ export function HER2() {
             TRAFFICKING BEHAVIOR IN CANCER CELLS
           </h1>
           <Image
-            src="/projects/her2.png"
+            src="/projects/her2_rz.png"
             alt="Image"
             width="0"
             height="0"
