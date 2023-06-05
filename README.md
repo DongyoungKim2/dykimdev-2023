@@ -1,3 +1,10 @@
+## Todo
+- [ ] project 에 close 버튼 추가
+- [ ] Image 용량 및 크기 줄이기
+- [ ] mboile 에서 circle 사이즈 더 줄이기
+- [ ] 내용 검증
+- [ ] cv update
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
