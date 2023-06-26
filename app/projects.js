@@ -55,7 +55,7 @@ export function Gpt() {
   return (
     <div
       className="tooltip tooltip-bottom"
-      data-tip="GPT (Generative Pretrained Transformer) Platform )roject"
+      data-tip="GPT (Generative Pretrained Transformer) Platform 구축"
     >
       <div className="avatar" onClick={() => window.gpt.showModal()}>
         <div className={circleSize}>
@@ -71,14 +71,14 @@ export function Gpt() {
             ✕
           </button>
           <h1 className="text-3xl text-left font-bold py-10">
-            GPT Platform Project
+            GPT Platform 구축
           </h1>
           <Image
             src="/projects/gpt_rz.png"
             alt="Image"
             width="0"
             height="0"
-            sizes="100vw"
+            sizes="10 0vw"
             className="w-9/12 mx-auto h-auto"
           />
           <p>KB-GPT Platform</p>
@@ -89,7 +89,7 @@ export function Gpt() {
                   GPT 사용 이해를 위한 데모사이트 운영 (http://www.kb-gpt.com)
                 </li>
               </a>
-              <li>한글가능한 GPT 모델 SFT 및 RLHF 수행</li>
+              <li>금융 언어 특화 GPT 모델 SFT 및 RLHF 수행</li>
               <li>GPT 모델을 잘 활용하기 위한 GPT 플랫폼 기획 및 개발 </li>
               <li>
                 GPT 사용에 대한 컴플라이언스 해결을 위한 GPT Complience Monitor
@@ -105,7 +105,7 @@ export function Gpt() {
           <button>close</button>
         </form>
       </dialog>
-      <div className="font-bold py-2 text-base">GPT Platform (2023)</div>
+      <div className="font-bold py-2 text-base">KB-GPT (2023)</div>
     </div>
   );
 }
@@ -115,7 +115,7 @@ export function Lvlm() {
   return (
     <div
       className="tooltip tooltip-bottom"
-      data-tip="Large Vision-Language Model (LVLM) Training Project"
+      data-tip="Large Vision-Language Model (LVLM) 개발 Project"
     >
       <div className="avatar" onClick={() => window.lvlm.showModal()}>
         <div className={circleSize}>
@@ -131,7 +131,7 @@ export function Lvlm() {
             ✕
           </button>
           <h1 className="text-3xl text-left font-bold py-10">
-            Large Vision-Language Model (LVLM) Training Project
+            Large Vision-Language Model (LVLM) 개발 Project
           </h1>
           <Image
             src="/projects/lvlm_rz.png"
@@ -208,8 +208,8 @@ export function Kbaiocr() {
           <div className="py-4">
             <ul className="list-disc list-inside py-2 text-left">
               <li>
-                KB 국민은행내 모든 고객 및 직원 업무의 문서처리를 위한 자체개발
-                OCR 플랫폼 개발 리드
+                KB 국민은행내 모든 고객 및 직원 업무의 문서처리를 위한 OCR
+                플랫폼 자체개발
               </li>
               <li>
                 마이크로서비스(MSA) 문서 처리 플랫폼으로 재사용 및 확장 가능한
@@ -291,9 +291,7 @@ export function Kbaiocr() {
           <button>close</button>
         </form>
       </dialog>
-      <div className="font-bold py-2">
-        KB AI-OCR 공통플랫폼 구축 프로젝트 (2021 - 2022)
-      </div>
+      <div className="font-bold py-2">KB AI-OCR (2021 - 2022)</div>
     </div>
   );
 }
@@ -436,7 +434,7 @@ export function DataLake() {
               <li>
                 현대자동차에서 서비스하는 셔클 서비스에서 실시간으로 생성되는
                 데이터를 저장, 정제하여 비지니스 인텔리전스(BI) 및 서비스
-                리포팅에 필요한 API로 데이터를 제공할 수 있는 DataLake 구축 리드
+                리포팅에 필요한 API로 데이터를 제공할 수 있는 DataLake 구축
               </li>
               <li>
                 마이크로서비스 컨테이너내 gRPC 로 통신되는 모든 데이터를 Kafka
@@ -586,7 +584,7 @@ export function SLIOCR() {
           <button>close</button>
         </form>
       </dialog>
-      <div className="font-bold py-2">SLIOCR (2020 - 2021)</div>
+      <div className="font-bold py-2">SLI-OCR (2020 - 2021)</div>
     </div>
   );
 }
@@ -784,7 +782,7 @@ export function Hist() {
           <button>close</button>
         </form>
       </dialog>
-      <div className="font-bold py-2">Hist (2019 - 2020)</div>
+      <div className="font-bold py-2">AI Histology (2019 - 2020)</div>
     </div>
   );
 }
@@ -836,7 +834,7 @@ export function AITomography() {
           <button>close</button>
         </form>
       </dialog>
-      <div className="font-bold py-2">AITomography (2019 - 2020)</div>
+      <div className="font-bold py-2">AI Tomography (2019 - 2020)</div>
     </div>
   );
 }
@@ -1108,9 +1106,7 @@ export function SR() {
           <button>close</button>
         </form>
       </dialog>
-      <div className="font-bold py-2">
-        SR (2012 - 2016 | Texas A&M University)
-      </div>
+      <div className="font-bold py-2">SR (2012 - 2016)</div>
     </div>
   );
 }
@@ -1296,9 +1292,7 @@ export function HER23() {
           <button>close</button>
         </form>
       </dialog>
-      <div className="font-bold py-2">
-        HER23 (2014 - 2016 | Texas A&amp;M University)
-      </div>
+      <div className="font-bold py-2">HER2/3 (2014 - 2016)</div>
     </div>
   );
 }

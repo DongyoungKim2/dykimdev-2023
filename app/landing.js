@@ -33,7 +33,7 @@ export function LandingDesktop() {
 
           <div className="flex gap-2 pt-5 object-left w-96">
             <div>
-              <a href="2023_2_cv_dongyoungkim.pdf">
+              <a href="2023_2_cv_dongyoungkim.pdf" target="_blank">
                 <button className="btn btn-primary">CV</button>
               </a>
             </div>
@@ -43,7 +43,7 @@ export function LandingDesktop() {
               </a>
             </div>
             <div>
-              <a href="https://velog.io/@dongyoungkim">
+              <a href="https://velog.io/@dongyoungkim" target="_blank">
                 <button className="btn btn-primary">Blog</button>
               </a>
             </div>
@@ -74,7 +74,7 @@ export function LandingMobile() {
 
             <div className="flex gap-2 pt-5 object-left w-96">
               <div>
-                <a href="2023_2_cv_dongyoungkim.pdf">
+                <a href="2023_2_cv_dongyoungkim.pdf" target="_blank">
                   <button className="btn btn-primary">CV</button>
                 </a>
               </div>
@@ -84,7 +84,7 @@ export function LandingMobile() {
                 </a>
               </div>
               <div>
-                <a href="https://velog.io/@dongyoungkim">
+                <a href="https://velog.io/@dongyoungkim" target="_blank">
                   <button className="btn btn-primary">Blog</button>
                 </a>
               </div>
