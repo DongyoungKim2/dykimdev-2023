@@ -84,6 +84,11 @@ export function Gpt() {
           <p>KB-GPT Platform</p>
           <div className="py-4">
             <ul className="list-disc list-inside py-2 text-left">
+              <a href="http://www.kb-gpt.com" target="_blank">
+                <li>
+                  GPT 사용 이해를 위한 데모사이트 운영 (http://www.kb-gpt.com)
+                </li>
+              </a>
               <li>한글가능한 GPT 모델 SFT 및 RLHF 수행</li>
               <li>GPT 모델을 잘 활용하기 위한 GPT 플랫폼 기획 및 개발 </li>
               <li>
@@ -92,8 +97,8 @@ export function Gpt() {
               </li>
             </ul>
           </div>
-          <div class="modal-action">
-            <button class="btn">Close</button>
+          <div className="modal-action">
+            <button className="btn">Close</button>
           </div>
         </form>
         <form method="dialog" className="modal-backdrop">
@@ -156,8 +161,8 @@ export function Lvlm() {
               </li>
             </ul>
           </div>
-          <div class="modal-action">
-            <button class="btn">Close</button>
+          <div className="modal-action">
+            <button className="btn">Close</button>
           </div>
         </form>
         <form method="dialog" className="modal-backdrop">
@@ -278,8 +283,8 @@ export function Kbaiocr() {
               </li>
             </ul>
           </div>
-          <div class="modal-action">
-            <button class="btn">Close</button>
+          <div className="modal-action">
+            <button className="btn">Close</button>
           </div>
         </form>
         <form method="dialog" className="modal-backdrop">
@@ -381,8 +386,8 @@ export function KBAIOCRModel() {
               </li>
             </ul>
           </div>
-          <div class="modal-action">
-            <button class="btn">Close</button>
+          <div className="modal-action">
+            <button className="btn">Close</button>
           </div>
         </form>
         <form method="dialog" className="modal-backdrop">
@@ -450,8 +455,8 @@ export function DataLake() {
               </li>
             </ul>
           </div>
-          <div class="modal-action">
-            <button class="btn">Close</button>
+          <div className="modal-action">
+            <button className="btn">Close</button>
           </div>
         </form>
         <form method="dialog" className="modal-backdrop">
@@ -573,8 +578,8 @@ export function SLIOCR() {
               </li>
             </ul>
           </div>
-          <div class="modal-action">
-            <button class="btn">Close</button>
+          <div className="modal-action">
+            <button className="btn">Close</button>
           </div>
         </form>
         <form method="dialog" className="modal-backdrop">
@@ -623,8 +628,8 @@ export function GraphDB() {
               </li>
             </ul>
           </div>
-          <div class="modal-action">
-            <button class="btn">Close</button>
+          <div className="modal-action">
+            <button className="btn">Close</button>
           </div>
         </form>
         <form method="dialog" className="modal-backdrop">
@@ -705,8 +710,8 @@ export function AIM() {
               </li>
             </ul>
           </div>
-          <div class="modal-action">
-            <button class="btn">Close</button>
+          <div className="modal-action">
+            <button className="btn">Close</button>
           </div>
         </form>
         <form method="dialog" className="modal-backdrop">
@@ -771,8 +776,8 @@ export function Hist() {
               </li>
             </ul>
           </div>
-          <div class="modal-action">
-            <button class="btn">Close</button>
+          <div className="modal-action">
+            <button className="btn">Close</button>
           </div>
         </form>
         <form method="dialog" className="modal-backdrop">
@@ -823,8 +828,8 @@ export function AITomography() {
               </li>
             </ul>
           </div>
-          <div class="modal-action">
-            <button class="btn">Close</button>
+          <div className="modal-action">
+            <button className="btn">Close</button>
           </div>
         </form>
         <form method="dialog" className="modal-backdrop">
@@ -929,8 +934,8 @@ export function Spinner() {
               </li>
             </ul>
           </div>
-          <div class="modal-action">
-            <button class="btn">Close</button>
+          <div className="modal-action">
+            <button className="btn">Close</button>
           </div>
         </form>
         <form method="dialog" className="modal-backdrop">
@@ -1005,8 +1010,8 @@ export function Evident() {
               </li>
             </ul>
           </div>
-          <div class="modal-action">
-            <button class="btn">Close</button>
+          <div className="modal-action">
+            <button className="btn">Close</button>
           </div>
         </form>
         <form method="dialog" className="modal-backdrop">
@@ -1095,8 +1100,8 @@ export function SR() {
               </li>
             </ul>
           </div>
-          <div class="modal-action">
-            <button class="btn">Close</button>
+          <div className="modal-action">
+            <button className="btn">Close</button>
           </div>
         </form>
         <form method="dialog" className="modal-backdrop">
@@ -1202,8 +1207,8 @@ export function RMUM() {
               </li>
             </ul>
           </div>
-          <div class="modal-action">
-            <button class="btn">Close</button>
+          <div className="modal-action">
+            <button className="btn">Close</button>
           </div>
         </form>
         <form method="dialog" className="modal-backdrop">
@@ -1283,8 +1288,8 @@ export function HER23() {
               </li>
             </ul>
           </div>
-          <div class="modal-action">
-            <button class="btn">Close</button>
+          <div className="modal-action">
+            <button className="btn">Close</button>
           </div>
         </form>
         <form method="dialog" className="modal-backdrop">
@@ -1362,8 +1367,8 @@ export function HER2() {
               </li>
             </ul>
           </div>
-          <div class="modal-action">
-            <button class="btn">Close</button>
+          <div className="modal-action">
+            <button className="btn">Close</button>
           </div>
         </form>
         <form method="dialog" className="modal-backdrop">
