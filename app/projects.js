@@ -96,6 +96,24 @@ export function Gpt() {
                 개발
               </li>
             </ul>
+            <h2 className="font-bold text-xl pt-2 text-left">
+              *관련 결과/수상/뉴스
+            </h2>
+            <ul className="list-disc list-inside py-2 text-left">
+              <li>
+                [뉴스] 국민銀, 은행권 최초 '생성형 AI' 도입 추진 전자신문, 2023,
+                https://www.etnews.com/20230616000176
+              </li>
+              <li>
+                [뉴스] KB국민 vs 신한 vs 하나...은행권 '차세대 AI' 물밑경쟁
+                본격화 디지털투데이, 2023,
+                https://www.digitaltoday.co.kr/news/articleView.html?idxno=479499
+              </li>
+              <li>
+                [뉴스] 은행권 챗GPT 경쟁 본격화 되나 디지털투데이, 2023,
+                https://www.digitaltoday.co.kr/news/articleView.html?idxno=479846
+              </li>
+            </ul>
           </div>
           <div className="modal-action">
             <button className="btn">Close</button>
